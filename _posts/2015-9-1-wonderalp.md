@@ -8,7 +8,7 @@ excerpt:		Wonderalp is a cabinet of curiosities based on Alps travel diaries wri
 
 Wonderalp is a cabinet of curiosities based on Alps travel diaries written by scientists from the 16th to the 18th century in Switzerland. The app showcases engraving illustrations and tales that guide the user between myth and science and help to understand the scientists’ wonder at nature at that time.
 
-{% include template_video.html video-path="/videos/bread-and-butter/wonderalp/Portfolio_BB_WonderAlp_Screencast_HD.mp4" video-poster-path="/videos/bread-and-butter/wonderalp/Portfolio_BB_WonderAlp_Screencast_HD_poster.png" video-caption="Video screencast of Wonderalp on iPad" %}
+{% include template_vimeo.html vimeo-id="147229085" video-ratio-precent="56.25" video-caption="Video screencast of Wonderalp on iPad" %}
 
 The application available on the {% include template_link-target-blank.html href="https://itunes.apple.com/au/app/wonderalp/id1042221833" txt="App&nbsp;Store" %} and the {% include template_link-target-blank.html href="https://play.google.com/store/apps/details?id=com.wonderalp.fr" txt="Play&nbsp;Store" %}. It has been designed and developed as a web app because it’s meant to be a website in the future. The grid layout is fluid and adjustable to a responsive environment. 
 

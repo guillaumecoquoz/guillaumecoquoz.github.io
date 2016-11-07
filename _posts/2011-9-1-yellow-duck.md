@@ -10,6 +10,6 @@ Yellow Duck is an interactive music video. It invites users to interact with bot
 
 {% include template_link.html href="/downloads/ecal/yellow-duck/Yellow_Duck_macosx.zip" txt="Download&nbsp;the&nbsp;app" %} (MacOS only)
 
-{% include template_video.html video-path="/videos/ecal/yellow-duck/YellowDuck.mp4" video-poster-path="/videos/ecal/yellow-duck/YellowDuck_poster.png" %}
+{% include template_vimeo.html vimeo-id="25472361" video-ratio-precent="47.5" video-caption="Video screencast of Yellow Duck interactive music video" %}
 
 {% include template_copyright.html year="2011" author="écal" %}

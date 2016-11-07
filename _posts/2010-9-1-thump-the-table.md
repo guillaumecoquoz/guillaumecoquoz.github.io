@@ -8,7 +8,7 @@ excerpt:		Thump The Table is an iPhone game for 2-8 players. Put your iPhone on 
 
 Thump The Table is an iPhone game for 2-8 players. Put your iPhone on a table and thump your fist on the table to fill a gauge and win the game. I was interested in making a touch-screen smartphone game where the users do not have to touch the device. 
 
-{% include template_video.html video-path="/videos/ecal/thump-the-table/ThumpTheTable.mp4" video-poster-path="/videos/ecal/thump-the-table/ThumpTheTable_poster.png" %}
+{% include template_vimeo.html vimeo-id="24023678" video-ratio-precent="56.25" video-caption="Video presentation of Thump The Table" %}
 
 {% include template_img-small.html img-path="/images/ecal/thump-the-table/ttt_ss_01.jpg" img-alt="A picture of an iPhone showing the calibrating step of the game" img-title="Thump The Table game calibration step" %}
 
