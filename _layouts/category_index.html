@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<!-- Catergory index DOM -->
+<h1 class="title title__page">{{ page.category | capitalize | replace: "-", " " }}</h1>
+{% if site.categories[page.category] %}
+  {% for post in site.categories[page.category] %}
+		{% include template_post-header.html %}
+  {% endfor %}
+{% else %}
+  <p>No pages belongs to the <strong>{{ page.category | capitalize | replace: "-", " " }}</strong> category</p>
+{% endif %}

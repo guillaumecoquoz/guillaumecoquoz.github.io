@@ -1,0 +1,24 @@
+/* Breakpoints */
+@mixin breakpoint($point) {
+  @if $point == smallest {
+    @media (max-width: 20em) { @content; } // 320px
+  }
+  @else if $point == xxs {
+    @media (max-width: 25em) { @content; } // 400px
+  }
+  @else if $point == xs {
+    @media (max-width: 30em)  { @content; } // 480px
+  }
+  @else if $point == sm {
+    @media (max-width: 38em)  { @content; } // 608px
+  }
+  @else if $point == md {
+    @media (max-width: 43em)  { @content; } // 688px
+  }
+  @else if $point == lg {
+    @media (max-width: 50em)  { @content; } // 800px
+  }
+  @else if $point == xl {
+    @media (max-width: 55em)  { @content; } // 880px
+  }
+}

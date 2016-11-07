@@ -1,0 +1,46 @@
+.wrapper__footer {
+  margin-top: $space--xxl;
+  padding: 0 4ex;
+  font-size: $font-size--sm;
+  color: $text-color--light;
+
+  @include breakpoint(sm) {
+    font-size: $font-size--xs;
+  }
+  @include breakpoint(xs) {
+    margin-top: $space--base * 3; 
+    padding: 2ex;
+    text-align: center;
+    background-color: $lighter-color;
+  }
+
+  p {
+  	display: inline-block;
+
+    @include breakpoint(xs) {
+      display: block;
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      float: right;
+      text-align: right;
+
+      @include breakpoint(xs) {
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+
+  a {
+    color: $text-color--light;
+
+    &:hover {
+      color: $link-color;
+    }
+    &:active {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0 0 $space--sm;
+  font-family: $display-font;
+  font-size: $font-size--base;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    font-size: $font-size--sm;
+  }
+}
+
+h1 {
+  color: $text-color;
+  font-weight: bold;
+}
+
+h2 {
+  color: $text-color--light;
+  font-weight: bold;
+}
+
+h3 {
+  color: $text-color--lighter;
+  font-weight: bold;
+}
+
+h4 {
+  color: $text-color--light;
+  font-weight: normal;
+}
+
+h5 {
+  color: $text-color--lighter;
+  font-weight: normal;
+}
+
+h6 {
+  color: $text-color--lightest;
+  font-weight: normal;
+}
+
+/* Paragraph */
+p {
+  padding: 0;
+  margin: 0 0 $line-height--base;
+
+  @include breakpoint(sm) {
+    margin-bottom: $line-height--sm;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: $text-color;
+  padding: $space--xxs 0;
+  border-bottom: 1px solid $medium-color;
+  transition: border-bottom 0.1s;
+
+  &:hover {
+    color: $link-color;
+    border-bottom: $space--xs solid $link-color;
+  }
+
+  &:active {
+    color: $bg-color;
+    background-color: $link-color;
+  }
+}
+a[target="_blank"]::after {
+  content: "↗";
+  padding-left: $space--xs;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0 0 $space--lg 0;
+
+  ul, ol {
+    color: $text-color--light;
+
+    ul, ol {
+      color: $text-color--lighter;
+
+      ul, ol {
+        color: $text-color--lightest;
+      }
+    }
+  }
+
+  li:first-child, ul li, ol li {
+    padding-top: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  ul {
+    padding-left: 3ex;
+
+    ul {
+      padding-left: 3ex;
+
+      ul {
+        padding-left: 3ex;
+      }
+    }
+  }
+
+  li:before {
+      content: "—";
+      padding-right: 2ex;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 3.5ex;
+
+  ol {
+    padding-left: 3.5ex;
+
+    ol {
+      padding-left: 3.5ex;
+
+      ol {
+        padding-left: 3.5ex;
+      }
+    }
+  }
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+/* Modifiers */
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+/* Quotes */
+blockquote {
+  margin: 0;
+  padding: 0 0 0 2ex;
+  font-style: italic;
+  border-left: 1ex solid $light-color;
+
+  p {
+    padding: 0;
+  }
+}
+
+/* Code */
+// Code elements inside text
+code {
+  padding: 0.5ex 1ex;
+  background-color: $lighter-color;
+  font-family: $text-font;
+}
+
+// Code blocks
+.highlight {
+  background-color: $lighter-color;
+  padding: 0.5ex 1ex;
+  margin: 0 0 $space--base;
+  line-height: 1.5;
+  white-space: pre-line;
+
+  code {
+    padding: 0;
+  }
+}
+
+// Post copyright
+.copyright__post {
+  font-size: $font-size--xs;
+  text-align: center;
+  color: $text-color--lightest;
+}
+
+/* Text selection */
+// Specify the color of the text selection
+::-moz-selection {
+  background: rgba($link-color, 0.1);
+}
+::selection {
+  background: rgba($link-color, 0.1);
+}

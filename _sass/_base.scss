@@ -1,0 +1,47 @@
+html {
+  font-size: 100%; // 16px
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "alt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: $bg-color;
+  font-family: $text-font;
+  font-size: $font-size--base;
+  line-height: 2;
+  color: $text-color;
+
+  @include breakpoint(sm) {
+    font-size: $font-size--sm;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.container__masthead, .container__footer {
+  max-width: 112ex;
+}
+
+.container__masthead {
+  @include breakpoint(xs) {
+    text-align: center;
+  }
+}
+
+.container__main {
+  max-width: 80ex;
+
+  @include breakpoint(md) {
+    max-width: 72ex;
+  }
+}

@@ -1,0 +1,29 @@
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+// Horizontal line
+hr {
+  margin: 2rem 0 0;
+  border: 0;
+  border-bottom: 1px dotted $medium-color;
+}
+
+/* Alignment */
+// align right
+.util--float-right {
+	float: right;
+}
+
+.util--text-align-right {
+	text-align: right;
+}

@@ -2,50 +2,51 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    {% include data_meta.html %}
   </head>
-
+  
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <!-- Header -->
+    {% if page.category %}{% assign class = 'wrapper__masthead--subnav' %}
+      <div class="wrapper__masthead {{ class }}">
+    {% else %}
+      <div class="wrapper__masthead">
+    {% endif %}
+      <div class="container container__masthead">
+        <header class="clearfix">
+          <!-- Site title -->
+          <div class="site__info">
+            <a href="{{ site.baseurl }}/">
+              <span class="site__name">{{ site.name }}</span>
+              <span class="site__description">{{ site.description }}</span>
+              <span class="site__description--short">{{ site.description--short }}</span>
+            </a>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+          <!-- Site nav -->
+          <nav class="site__nav">
+            <ul>
+              {% include helper_site-nav-highlighter.html %}
+            </ul>
           </nav>
         </header>
       </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <!-- Category nav -->
+    {% include template_category-nav.html %}
+    <!-- Content -->
+    <div id="main" role="main" class="container container__main">
+      <div class="wrapper__main">
+        {{ content }}
+      </div>
     </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
+    <!-- Footer -->
+    <div class="wrapper__footer">
+      <div class="container container__footer">
+        <footer>
+          <p>&copy; {{ 'now' | date: "%Y" }} {{ site.name }}<br/><a href="{{ site.github_url }}/blob/master/LICENSE" target="_blank">MIT License</a></p>
+          <p>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a><br/>Hosted on <a href="{{ site.github_url }}" target="_blank">Github</a></p>
         </footer>
       </div>
     </div>
-
-    {% include analytics.html %}
   </body>
 </html>

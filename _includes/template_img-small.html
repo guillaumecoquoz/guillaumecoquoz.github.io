@@ -1,0 +1,2 @@
+<img class="img--small" src="{{ include.img-path }}" alt="{{ include.img-alt }}" title="{% if include.img-title != null %}{{ include.img-title }}{% elsif include.img-caption != null %}{{ include.img-caption }}{% endif %}">
+{% if include.img-caption != null %}<span class="img-caption">{{ include.img-caption }}</span>{% endif %}

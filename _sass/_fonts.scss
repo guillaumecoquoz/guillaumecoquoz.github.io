@@ -1,0 +1,55 @@
+
+//
+// FONTS
+//
+
+
+/* text-font */
+// Regular
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('fonts/LiberationMono-Regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/LiberationMono-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/LiberationMono-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/LiberationMono-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/LiberationMono-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/LiberationMono-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+// Regular Italic
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('fonts/LiberationMono-Italic-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/LiberationMono-Italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/LiberationMono-Italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/LiberationMono-Italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/LiberationMono-Italic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/LiberationMono-Italic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+// Bold
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('fonts/LiberationMono-Bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/LiberationMono-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/LiberationMono-Bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/LiberationMono-Bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/LiberationMono-Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/LiberationMono-Bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+// Bold Italic
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('fonts/LiberationMono-BoldItalic-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/LiberationMono-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/LiberationMono-BoldItalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/LiberationMono-BoldItalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/LiberationMono-BoldItalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/LiberationMono-BoldItalic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-style: italic;
+}

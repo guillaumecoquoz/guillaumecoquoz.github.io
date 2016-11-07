@@ -1,27 +1,66 @@
+/* Colors */
+// Background
+$bg-color: 										rgb(248,248,248);
+// Text
+$text-color--lightest:				rgb(140,140,150);
+$text-color--lighter: 				rgb(120,120,130);
+$text-color--light: 					rgb(80,80,90);
+$text-color: 									rgb(40,40,50);
+// Links
+$link-color: 									rgb(0,64,248);
+$link-color--hover: 					rgb(0,16,248);
+$link-color--active: 					rgb(0,0,248);
+$link-color--visited:					rgb(128,0,248);
+// Shades
+$lightest-color: 							rgb(245,243,240);
+$lighter-color: 							rgb(235,233,230);
+$light-color: 								rgb(225,223,220);
+$medium-color: 								rgb(185,183,180);
+$mediumDark-color: 						rgb(145,143,140);
+$dark-color: 									rgb(85,83,80);
+$darker-color: 								rgb(65,63,60);
+$darkest-color: 							rgb(45,43,40);
+// Code highlights
+$highlight-color--light-grey: rgb(150,150,160);
+$highlight-color--grey: 			rgb(110,110,120);
+$highlight-color--dark-grey: 	rgb(70,70,80);
+$highlight-color--blue: 			rgb(0,64,248);
+$highlight-color--purple: 		rgb(128,0,248);
+$highlight-color--pink: 			rgb(248,0,128);
+$highlight-color--red: 				rgb(248,32,16);
+$highlight-color--orange: 		rgb(248,128,32);
+$highlight-color--yellow: 		rgb(248,192,32);
+$highlight-color--citrus: 		rgb(192,248,64);
+$highlight-color--green: 			rgb(64,224,32);
+$highlight-color--turquoise: 	rgb(32,248,192);
+// Transparent
+$transparent-color: 					rgba(255,255,255,0);
 
-//
-// VARIABLES
-//
+/* Typography */
+// Fonts
+$text-font: 		'Liberation Mono', Consolas, Menlo, Roboto Mono, Droid Sans Mono, Lucida Console, Andale Mono, Monaco, monospace;
+$display-font:	'Liberation Mono', Consolas, Menlo, Roboto Mono, Droid Sans Mono, Lucida Console, Andale Mono, Monaco, monospace;
+// Size
+$font-size--base:	1rem; 														// 16px
+$font-size--sm: 	$font-size--base / 1.1428571429;	// 14px
+$font-size--xs: 	$font-size--base / 1.3333333333;	// 12px
+$font-size--xxs: 	$font-size--base / 1.6;						// 10px
+// Base font-size for breakpoint px to em mixin
+$bf: 16;
+// Line height
+$line-height--base: 2rem;			// 32px
+$line-height--sm: 	1.75rem;	// 28px
 
-// Colors
-$blue: #4183C4;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+/* Spacing */
+$space--base:	1rem;							// 16px
+$space--xxl: 	$space--base * 5;	// 80px
+$space--xl: 	$space--base * 4;	// 64px
+$space--lg: 	$space--base * 2;	// 32px
+$space--sm: 	$space--base / 2;	// 8px
+$space--xs: 	$space--base / 4;	// 4px
+$space--xxs: 	$space--base / 8;	// 2px
+// Character space
+$character-space: 			$font-size--base / 1.6649323621;	// 9.61px for 16px font-size
+$character-space--sm: 	$font-size--sm / 1.6646848989;	// 8.41px for 14px font-size
+$character-space--xs: 	$font-size--xs / 1.6666666667;	// 7.2px for 12px font-size
+$character-space--xxs:	$font-size--xxs / 1.6611295681;	// 6.02px for 10px font-size

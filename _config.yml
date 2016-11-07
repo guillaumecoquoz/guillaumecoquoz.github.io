@@ -3,34 +3,68 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Guillaume Coquoz
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Interaction Design
+description--short: IxD
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: 
 
+# Site's navigation
+nav:
+  - title: Bread & Butter
+    url: /bread-and-butter
+    landing: /wonderalp
+  - title: Urturn
+    url: /urturn
+    landing: /editor
+  - title: écal
+    url: /ecal
+    landing: /yellow-duck
+
+# Categories' navigation
+bread-and-butter-nav: 
+  - title: Wonderalp
+    url: /bread-and-butter/wonderalp
+  - title: Omega
+    url: /bread-and-butter/omega
+  - title: The 210
+    url: /bread-and-butter/the-210
+  - title: Pictet
+    url: /bread-and-butter/pictet
+  - title: Andjoy
+    url: /bread-and-butter/andjoy
+urturn-nav: 
+  - title: Editor
+    url: /urturn/editor
+  - title: Player
+    url: /urturn/player
+  - title: Factory
+    url: /urturn/factory
+  - title: Icons
+    url: /urturn/icons
+  - title: Dashboard
+    url: /urturn/dashboard
+  - title: Turns
+    url: /urturn/turns
+ecal-nav: 
+  - title: Yellow Duck
+    url: /ecal/yellow-duck
+  - title: Abyss
+    url: /ecal/abyss
+  - title: KM3
+    url: /ecal/km3
+  - title: Thump The Table
+    url: /ecal/thump-the-table
+  - title: Wordsheep
+    url: /ecal/wordsheep
+  - title: Boombox
+    url: /ecal/boombox
 #
 # Flags below are optional
 #
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -41,13 +75,16 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: guillaumecoquoz.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+
+# Your site's Github repository URL
+github_url: "https://github.com/guillaumecoquoz/guillaumecoquoz.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -76,6 +113,8 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag # https://help.github.com/articles/search-engine-optimization-for-github-pages/
+  - jemoji # https://help.github.com/articles/emoji-on-github-pages/
 
 # Exclude these files from your production _site
 exclude:
@@ -84,3 +123,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# To be able to access the server with other devices (uncomment "host:…")
+# Simply go to <server-device-IP-adress>:4000 on any device browser
+# !this allow anyone on the network to access the server because it binds server to all available IPs!
+# host: 0.0.0.0

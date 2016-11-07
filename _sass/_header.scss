@@ -1,0 +1,211 @@
+.wrapper__masthead {
+  margin-bottom: $space--xxl;
+  padding: 0 3ex;
+  font-size: $font-size--sm;
+  border-bottom: 1px solid $lighter-color;
+
+  @include breakpoint(lg) {
+    margin-bottom: $space--xl;
+  }
+  @include breakpoint(md) {
+    margin-bottom: $space--lg;
+  }
+  @include breakpoint(sm) {
+    font-size: $font-size--xs;
+  }
+  @include breakpoint(xs) {
+    padding: 0 2ex;
+    font-size: $font-size--xs;
+  }
+  @include breakpoint(xxs) {
+    padding: 0;
+  }
+}
+
+// Conditional margin for category navigation
+.wrapper__masthead--subnav {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.site__info {
+  float: left;
+  line-height: $space--xl;
+
+  @include breakpoint(sm) {
+    line-height: $space--xl - $space--sm;
+  }
+  @include breakpoint(xs) {
+    display: block;
+    float: none;
+    line-height: $space--xl - $space--base;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 1ex 0 1ex;
+    border: none;
+    color: $text-color;
+
+    &:hover {
+      color: $link-color;
+    }
+
+    &:active {
+      color: white;
+    }
+  }
+}
+
+.site__name, .site__description, .site__description--short {
+  margin: 0;
+  padding: 0;
+}
+
+.site__description {
+
+  @include breakpoint(md) {
+    display: none;
+  }
+  @include breakpoint(xs) {
+    display: inline-block;
+  }
+}
+
+.site__description--short {
+  display: none;
+
+  @include breakpoint(md) {
+    display: inline-block;
+  }
+  @include breakpoint(xs) {
+    display: none;
+  }
+}
+
+.site__nav, .category__nav {
+  line-height: $space--xl - $space--sm;
+
+  @include breakpoint(sm) {
+    line-height: $space--base * 3;
+  }
+  @include breakpoint(xs) {
+    line-height: $space--lg + $space--sm;
+    min-width: $space--base * 3;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: $font-size--sm;
+
+    @include breakpoint(sm) {
+      font-size: $font-size--xs;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 1ex 0 1ex;
+        min-width: $space--base * 3;
+        color: $text-color;
+        background-color: $transparent-color;
+        border-top: $space--xs solid $transparent-color;
+        border-bottom: $space--xs solid $transparent-color;
+        transition: background-color 0.5s, border 0.5s;
+
+        &:hover {
+          color: $link-color;
+          background-color: $lightest-color;
+          border-bottom-color: $link-color;
+          transition: none;
+        }
+
+        &:active {
+          color: white;
+          background-color: $link-color;
+        }
+
+        &.active {
+          font-weight: bold;
+          border-bottom-color: $lighter-color;
+        }
+      }
+    }
+    // text list bullet style override
+    li:before {
+      content: none;
+      padding-right: 0;
+    }
+  }
+}
+
+.site__nav {
+  float: right;
+  text-align: center;
+
+  @include breakpoint(xs) {
+    float: none;
+  }
+}
+
+.category__nav {
+  width: 100%;
+  margin-bottom: $space--lg;
+  line-height: $space--base * 3;
+  background-color: $lighter-color;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    margin-bottom: $space--base + $space--sm;
+  }
+  @include breakpoint(xs) {
+    padding: $space--xs 0;
+    line-height: $space--base * 3 - $space--sm;
+  }
+
+   ul {
+
+    li {
+
+      a {
+        line-height: $space--base * 3 - $space--sm;
+
+        @include breakpoint(xs) {
+          margin: 0 $space--xxs;
+          border: none;
+          border-radius: $space--xs;
+        }
+
+        &:hover {
+          background-color: $light-color;
+        }
+
+        &:active {
+          background-color: $link-color;
+        }
+
+        &.active {
+          border-bottom-color: $bg-color;
+
+          @include breakpoint(xs) {
+            background-color: $light-color;
+            border: none;
+
+            &:active {
+              color: white;
+              background-color: $link-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

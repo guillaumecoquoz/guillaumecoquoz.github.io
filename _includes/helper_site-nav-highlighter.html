@@ -1,0 +1,2 @@
+<!-- inline to avoid whitespace characters in navigation -->
+{% for item in site.nav %}{% assign class = nil %}{% if page.url contains item.url %}{% assign class = 'active' %}{% endif %}<li><a href="{{ item.url }}{{ item.landing }}" class="{{ class }}">{{ item.title }}</a></li>{% endfor %}

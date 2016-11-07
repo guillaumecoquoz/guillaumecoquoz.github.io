@@ -1,0 +1,7 @@
+<a href="#img{{ include.img-id }}" class="link--img">
+  ![{{ include.img-alt }}]({{ include.img-path }}{% if include.img-title != null %} "{{ include.img-title }}" {% elsif include.img-caption != null %} "{{ include.img-caption }}"{% endif %})
+</a>
+{% if include.img-caption != null %}<span class="img-caption">{{ include.img-caption }}</span>{% endif %}
+<a href="#_" class="link--lightbox" id="img{{ include.img-id }}">
+  ![{{ include.img-alt }}]({{ include.img-path }}{% if include.img-caption != null %} "{{ include.img-caption }}"{% endif %})
+</a>

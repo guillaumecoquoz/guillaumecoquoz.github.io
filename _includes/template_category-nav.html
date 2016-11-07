@@ -1,0 +1,7 @@
+{% if page.category %}
+  <nav class="category__nav">
+    <ul>
+    {% include helper_{{ page.category }}-nav-highlighter.html %}
+    </ul>
+  </nav>
+{% endif %}

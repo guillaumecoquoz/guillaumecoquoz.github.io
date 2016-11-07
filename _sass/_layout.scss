@@ -1,0 +1,10 @@
+.wrapper__main {
+  padding: 0 4ex;
+
+  @include breakpoint(xxs) {
+    padding: 0 3ex;
+  }
+  @include breakpoint(smallest) {
+    padding: 0 2ex;
+  }
+}
