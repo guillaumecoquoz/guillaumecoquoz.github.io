@@ -10,7 +10,7 @@ Wonderalp is a cabinet of curiosities based on Alps travel diaries written by sc
 
 {% include template_vimeo.html vimeo-id="147229085" video-ratio-precent="56.25" video-caption="Video screencast of Wonderalp on iPad" %}
 
-The application available on the {% include template_link-target-blank.html href="https://itunes.apple.com/au/app/wonderalp/id1042221833" txt="App&nbsp;Store" %} and the {% include template_link-target-blank.html href="https://play.google.com/store/apps/details?id=com.wonderalp.fr" txt="Play&nbsp;Store" %}. It has been designed and developed as a web app because it’s meant to be a website in the future. The grid layout is fluid and adjustable to a responsive environment. 
+The application is available on the {% include template_link-target-blank.html href="https://itunes.apple.com/au/app/wonderalp/id1042221833" txt="App&nbsp;Store" %} and the {% include template_link-target-blank.html href="https://play.google.com/store/apps/details?id=com.wonderalp.fr" txt="Play&nbsp;Store" %}. It has been designed and developed as a web app because it’s meant to be a website in the future. The grid layout is fluid and adjustable to a responsive environment. 
 
 {% include template_img-lightbox.html img-id="2" img-path="/images/bread-and-butter/wonderalp/Portfolio_BB_WonderAlp_1.0_02.png" img-alt="A tablet showing the home page" img-caption="On the home page, the user can access 3 environments (dragons, crystals and plants)" %}
 
