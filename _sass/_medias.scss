@@ -2,11 +2,30 @@
 // img tag
 img {
 	display: block;
-  max-width: 100%;
+  max-width: 128ex;
   height: auto;
+  margin-left: -28ex;
+
+  @include breakpoint(xxxl) {
+    max-width: 112ex;
+	  margin-left: -20ex;
+  }
+  @include breakpoint(xxl) {
+    max-width: 96ex;
+	  margin-left: -12ex;
+  }
+  @include breakpoint(xl) {
+    max-width: 88ex;
+	  margin-left: -8ex;
+  }
+  @include breakpoint(lg) {
+    max-width: 100%;
+	  margin-left: auto;
+  }
 
   &.img--small {
   	margin: auto;
+  	max-width: 100%;
   }
 }
 
@@ -48,6 +67,7 @@ img {
 
 		&:hover {
 			transform: scale(1.01);
+			cursor: zoom-in;
 		}
 	}
 
@@ -68,6 +88,7 @@ img {
 
 	&:hover {
 		background-color: rgba($bg-color,0.95);
+		cursor: zoom-out;
 	}
 
 	&:active {
