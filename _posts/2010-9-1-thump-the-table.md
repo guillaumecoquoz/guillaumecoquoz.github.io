@@ -10,8 +10,4 @@ Thump The Table is an iPhone game for 2-8 players. Put your iPhone on a table an
 
 {% include template_vimeo.html vimeo-id="24023678" video-ratio-precent="56.25" video-caption="Video presentation of Thump The Table" %}
 
-{% include template_img-small.html img-path="/images/ecal/thump-the-table/ttt_ss_01.jpg" img-alt="A picture of an iPhone showing the calibrating step of the game" img-title="Thump The Table game calibration step" %}
-
-{% include template_img-small.html img-path="/images/ecal/thump-the-table/ttt_ss_02.jpg" img-alt="A picture of an iPhone showing the game screen" img-title="Thump The Table game screen" %}
-
 {% include template_copyright.html year="2010" author="écal" %}
