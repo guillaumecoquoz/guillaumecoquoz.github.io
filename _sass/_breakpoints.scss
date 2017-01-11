@@ -21,4 +21,10 @@
   @else if $point == xl {
     @media (max-width: 55em)  { @content; } // 880px
   }
+  @else if $point == xxl {
+    @media (max-width: 68em)  { @content; } // 1088px
+  }
+  @else if $point == xxxl {
+    @media (max-width: 75em)  { @content; } // 1200px
+  }
 }
