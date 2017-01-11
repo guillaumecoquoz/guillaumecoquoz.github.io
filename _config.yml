@@ -45,21 +45,13 @@ urturn-nav:
     url: /urturn/factory
   - title: Icons
     url: /urturn/icons
-  - title: Dashboard
-    url: /urturn/dashboard
-  - title: Turns
-    url: /urturn/turns
 ecal-nav: 
   - title: Yellow Duck
     url: /ecal/yellow-duck
   - title: Abyss
     url: /ecal/abyss
-  - title: KM3
-    url: /ecal/km3
   - title: Thump The Table
     url: /ecal/thump-the-table
-  - title: Wordsheep
-    url: /ecal/wordsheep
   - title: Boombox
     url: /ecal/boombox
 #
