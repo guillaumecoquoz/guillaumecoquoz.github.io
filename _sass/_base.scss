@@ -1,5 +1,4 @@
 html {
-  background: $bg-color; // temporary redirect hack
   font-size: 100%; // 16px
   font-kerning: normal;
   font-variant-ligatures: common-ligatures contextual;
@@ -12,7 +11,6 @@ html {
 }
 
 body {
-  display: none; // temporary redirect hack
   background: $bg-color;
   font-family: $text-font;
   font-size: $font-size--base;
